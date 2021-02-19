@@ -1,0 +1,43 @@
+@import "../../assets/style/variables";
+
+.questions {
+  .form-wrapper {
+    margin-top: 48px;
+
+    .form-field {
+      margin: 24px 0;
+      display: block;
+      text-align: left;
+      position: relative;
+
+      p {
+        margin-bottom: 24px;
+        font-size: 24px;
+        color: #464849;
+      }
+
+      input[type="radio"] {
+        color: #e7e8e8;
+      }
+
+      label {
+        font-size: 14px;
+        margin-left: 16px;
+      }
+
+      #no {
+        margin-left: 56px;
+      }
+
+    }
+
+    .error-label {
+      position: absolute;
+      font-size: 10px;
+      color: #b62c29;
+      margin-left: 5px;
+      left: 0;
+      bottom: -15px;
+    }
+  }
+}

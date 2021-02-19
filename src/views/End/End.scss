@@ -1,0 +1,72 @@
+@import "../../assets/style/variables";
+
+.home-page-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  h1 {
+    font-size: $fs-1;
+    text-align: center;
+    margin-bottom: $margin-xxl;
+  }
+
+  .flex-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-grid {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 3rem;
+  }
+
+  .user-info {
+    text-align: center;
+
+    &__avatar {
+      height: 250px;
+    }
+
+    &__name {
+      margin: $form-margin-l;
+    }
+
+    &__desc {
+      background: #efefef;
+      height: 120px;
+      padding: 24px;
+      text-align: left;
+      font-size: $fs-4;
+      font-family: 'robotolight', serif;
+      margin-bottom: 10px;
+      letter-spacing: 0.8px;
+      line-height: 24px;
+    }
+
+    button {
+      background: #000;
+      border: none;
+      color: #ffffff;
+      padding: 8px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        background: $little-data-color;
+        transition: all .3s ease-in-out;
+      }
+
+      &:focus {
+        border-color: $little-data-color;
+        outline: none;
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+}

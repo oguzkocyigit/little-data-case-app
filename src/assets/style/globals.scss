@@ -1,0 +1,173 @@
+@import "variables";
+@import "fonts";
+
+.is-flex {
+  display: flex;
+}
+
+
+.hidden {
+  overflow: hidden;
+}
+
+// width
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+// text colors
+.white-text {
+  color: $white;
+}
+
+// font sizes
+
+.fs-1 {
+  font-size:0.75rem;
+}
+
+.fs-2 {
+  font-size:0.9rem
+}
+
+.fs-3 {
+  font-size:1rem
+}
+
+.fs-4 {
+  font-size:1.4rem;
+}
+
+.fs-5 {
+  font-size:1.6rem;
+}
+
+.fs-6 {
+  font-size:2.4rem;
+}
+
+
+// paddings
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-10 {
+  padding: 10px !important;
+}
+
+.p-20 {
+  padding: 20px !important;
+}
+
+//margins
+
+.m-0 {
+  margin:0 auto !important;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+
+
+// aligning in flex
+.vertical-align {
+  align-items: center;
+}
+
+.justify-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+.pointer {
+  cursor: pointer;
+}
+
+.page-title {
+  margin-bottom: 1.2rem;
+}
+
+h1.page-title {
+  font-size:3.5rem;
+  color: #2c3f69;
+  text-transform: uppercase;
+  @media only screen and (max-width: 1366px) {
+    font-size:2rem;
+  }
+  @media only screen and (max-width: 1024px) {
+    font-size:2.25rem;
+  }
+}
+
+h2.page-title {
+  font-size:2.5rem;
+  color: $mc-red;
+}
+
+.mc-color {
+  color: $mc-red;
+}
+
+.mc-bg {
+  background: $mc-red;
+}
+
+.text-shadow {
+  text-shadow: 0 8px 8.896px #c4b59d,0 -2px 1px rgba(255,255,255,0.6);
+}
+
+.mb-0 {
+  margin-bottom:0 !important;
+}
+
+
+.align-bottom {
+  align-items: flex-end;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.mt-0 {
+  margin-top:0 !important;
+}
