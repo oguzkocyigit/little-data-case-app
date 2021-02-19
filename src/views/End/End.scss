@@ -1,72 +1,59 @@
 @import "../../assets/style/variables";
 
-.home-page-view {
+.end-page-view {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100%;
+
+  @media screen and (max-width: 414px) {
+    width: 90%;
+    margin:0 auto;
+  }
 
   h1 {
-    font-size: $fs-1;
+    font-size: 48px;
+    letter-spacing: 2px;
+
+    @media screen and (max-width: 1366px) {
+      margin:0;
+    }
+
+    @media screen and (max-width: 414px) {
+      font-size: $fs-1;
+    }
+  }
+
+  &__inner {
     text-align: center;
-    margin-bottom: $margin-xxl;
   }
 
-  .flex-row {
-    display: flex;
-    align-items: center;
-  }
-
-  .flex-grid {
+  img {
+    max-width: 920px;
+    margin:0 auto;
     display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 3rem;
+
+    @media screen and (max-width: 414px) {
+      width: 100%;
+    }
   }
 
-  .user-info {
-    text-align: center;
+  a {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    width: 225px;
+    display: block;
+    line-height: 40px;
+    font-family: 'robotolight', serif;
+    transition: all .3s ease-in-out;
+    margin: 24px auto 0;
 
-    &__avatar {
-      height: 250px;
-    }
-
-    &__name {
-      margin: $form-margin-l;
-    }
-
-    &__desc {
-      background: #efefef;
-      height: 120px;
-      padding: 24px;
-      text-align: left;
-      font-size: $fs-4;
-      font-family: 'robotolight', serif;
-      margin-bottom: 10px;
-      letter-spacing: 0.8px;
-      line-height: 24px;
-    }
-
-    button {
-      background: #000;
-      border: none;
-      color: #ffffff;
-      padding: 8px 20px;
-      font-size: 16px;
-      cursor: pointer;
+    &:hover {
+      background: $little-data-color;
       transition: all .3s ease-in-out;
-
-      &:hover {
-        background: $little-data-color;
-        transition: all .3s ease-in-out;
-      }
-
-      &:focus {
-        border-color: $little-data-color;
-        outline: none;
-        transition: all .3s ease-in-out;
-      }
     }
+
   }
 }

@@ -1,31 +1,34 @@
 <template>
-  <div class="home-page-view">
-    <div class="home-page-view__inner">
-      <h1>Littledata Welcome Flow Test</h1>
-      <div class="flex-row">
-        <div class="flex-grid">
-          <div class="user-info">
-            <div class="user-info__avatar">
-
-            </div>
-            <div class="user-info__name">
-              Name
-            </div>
-            <div class="user-info__text">
-              John is a new customer for littledata. We want him to go through the full servey so that we can properly setup his account.
-            </div>
-            <button>Enter John</button>
-          </div>
-        </div>
-      </div>
+  <div class="welcome-page-view">
+    <div class="welcome-page-view__inner">
+      <transition name="fade" v-if="activeStep === 1">
+        <UserForm @continue="activeStep = 2"></UserForm>
+      </transition>
+      <transition name="fade" v-if="activeStep === 2">
+        <Questions @back="activeStep = 1" @continue="activeStep = 3"></Questions>
+      </transition>
+      <transition name="fade" v-if="activeStep === 3">
+        <Destination></Destination>
+      </transition>
     </div>
   </div>
 </template>
 
 <script>
+import UserForm from "@/components/UserForm/UserForm";
+import Questions from "@/components/Questions/Questions";
+import Destination from "@/components/Destination/Destination";
+
+
 export default {
-  name: 'Home',
+  name: 'Welcome',
+  data() {
+    return {
+      activeStep: parseInt(this.$route.params.user),
+    }
+  },
+  components: {UserForm, Questions, Destination},
 }
 </script>
 
-<style lang="scss" src="./Home.scss"></style>
+<style lang="scss" src="./Welcome.scss"></style>

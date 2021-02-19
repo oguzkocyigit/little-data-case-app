@@ -1,5 +1,102 @@
 @import "../../assets/style/variables";
 
-.home-page-view {
+.user-form {
+  .form-wrapper {
+    margin-top: $spacing-xl;
 
+    .form-field {
+      margin: $spacing-tb-l;
+      display: block;
+      text-align: left;
+
+      @media screen and (max-width: 1024px) {
+        margin: $spacing-tb-m;
+      }
+
+      label {
+        font-size: $fs-4;
+        color: $label-color;
+
+        @media screen and (max-width: 1366px) {
+          font-size: $fs-5;
+        }
+
+      }
+
+      input[type="text"] {
+        width: 100%;
+        border: 1px solid $light-gray;
+        border-radius: $radius;
+        padding: $spacing-tb-m;
+        text-indent: 10px;
+        color: $label-color;
+        transition: all .3s ease-in-out;
+        margin-top: $spacing-m;
+
+        @media screen and (max-width: 1366px) {
+          padding: $spacing-tb-s;
+        }
+
+        @media screen and (max-width: 414px) {
+          padding: $spacing-tb-xs;
+        }
+
+        &:hover {
+          border-color: $little-data-color;
+          transition: all .3s ease-in-out;
+        }
+
+        &::placeholder {
+          color: $light-gray;
+        }
+
+        &:focus {
+          border-color: $little-data-color;
+          outline: none;
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+
+    .notification-box {
+      margin-top: $spacing-xl;
+      background: #dbeeed;
+      padding: $spacing-m;
+      border-radius: $radius;
+
+      @media screen and (max-width: 1366px) {
+        padding: $spacing-s;
+      }
+
+      input[type="checkbox"] {
+        margin-top: $spacing-m;
+        border: 1px solid $light-gray;
+        border-radius: $radius;
+        width: 15px;
+        height: 15px;
+      }
+
+      input[type="checkbox"] + label {
+        font-size: $fs-5;
+        color: $light-color;
+        font-family: 'robotoregular', serif;
+        margin-left: $spacing-xxs;
+
+        @media screen and (max-width: 1366px) {
+          font-size: $fs-6;
+        }
+
+        @media screen and (max-width: 414px) {
+          font-size: $fs-7;
+        }
+      }
+    }
+
+    .error-label {
+      position: absolute;
+      font-size: $fs-7;
+      color: $error-color;
+      margin-left: $spacing-xxs;
+    }
+  }
 }

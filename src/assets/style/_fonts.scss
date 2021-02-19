@@ -1,19 +1,31 @@
 @font-face {
-  font-family: "HankenSans-Light";
-  src: url('../fonts/hanken-sans/HankenSans-Light.otf');
+  font-family: 'robotobold';
+  src: url('../fonts/roboto/bold/roboto-bold-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/bold/roboto-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "HankenSans-Regular";
-  src: url('../fonts/hanken-sans/HankenSans-Regular.otf');
+  font-family: 'robotomedium';
+  src: url('../fonts/roboto/medium/roboto-medium-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/medium/roboto-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "HankenSans-Medium";
-  src: url('../fonts/hanken-sans/HankenSans-Medium.otf');
+  font-family: 'robotoregular';
+  src: url('../fonts/roboto/regular/roboto-regular-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/regular/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "HankenSans-Bold";
-  src: url('../fonts/hanken-sans/HankenSans-Bold.otf');
+  font-family: 'robotolight';
+  src: url('../fonts/roboto/light/roboto-light-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/light/roboto-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
