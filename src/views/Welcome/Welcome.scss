@@ -14,7 +14,7 @@
   &__inner {
     width: 50%;
     float: right;
-    height: 100vh;
+    min-height: 100vh;
     background: #ffffff;
     display: flex;
     align-items: center;
@@ -43,11 +43,11 @@
 
       @media screen and (max-width: 414px) {
         width: 72%;
-        padding: 0;
         position: absolute;
-        top: auto;
         left: auto;
+        top: 30px;
         transform: none;
+        padding: 0 0 30px;
       }
 
       .company-logo {
@@ -59,11 +59,17 @@
         margin-bottom: $spacing-m;
         margin-top: $spacing-xl;
         font-size: $fs-1;
-        color: #181a1a;
+        color: $title-color;
         font-family: 'robotobold', serif;
 
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 1024px) {
           font-size: $fs-2;
+        }
+
+        @media screen and (max-width: 414px) {
+          font-size: $fs-3;
+          margin-bottom: $spacing-s;
+          margin-top: $spacing-l;
         }
       }
 
@@ -111,9 +117,13 @@
         cursor: pointer;
         transition: all .3s ease-in-out;
 
+        @media screen and (max-width: 414px) {
+          margin-top: $spacing-l;
+        }
+
         svg {
           transition: all .3s ease-in-out;
-          fill: #464849;
+          fill: $label-color;
           width: 15px;
         }
 

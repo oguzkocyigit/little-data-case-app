@@ -29,7 +29,7 @@
     width: 45%;
     text-align: center;
     border: 1px solid #dbeeed;
-    padding: 32px 0;
+    padding: $spacing-tb-xl;
     margin-top: 80px;
     box-shadow: 3px 3px 11px -6px rgba(0, 0, 0, 1);
     cursor: pointer;
@@ -39,11 +39,15 @@
 
     @media screen and (max-width: 1366px) {
       font-size: $fs-3;
-      padding: 24px 0;
+      padding: $spacing-tb-l;
     }
 
     @media screen and (max-width: 1024px) {
       margin-top: 50px;
+    }
+
+    @media screen and (max-width: 414px) {
+      padding: 0;
     }
 
     a {
@@ -69,7 +73,10 @@
     img {
       width: 60px;
       height: 60px;
-
+      @media screen and (max-width: 414px) {
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 }

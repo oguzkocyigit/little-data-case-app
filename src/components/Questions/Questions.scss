@@ -31,7 +31,7 @@
       p {
         margin-bottom: $spacing-l;
         font-size: $fs-3;
-        color: #464849;
+        color: $label-color;
 
         @media screen and (max-width: 1366px) {
           font-size: $fs-4;
@@ -45,6 +45,10 @@
 
         @media screen and (max-width: 1366px) {
           font-size: $fs-6;
+        }
+
+        @media screen and (max-width: 414px) {
+          margin-left: $spacing-s;
         }
 
       }

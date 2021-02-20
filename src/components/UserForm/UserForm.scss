@@ -68,6 +68,10 @@
         padding: $spacing-s;
       }
 
+      @media screen and (max-width: 768px) {
+        margin-top: $spacing-l;
+      }
+
       input[type="checkbox"] {
         margin-top: $spacing-m;
         border: 1px solid $light-gray;
