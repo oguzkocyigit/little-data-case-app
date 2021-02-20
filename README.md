@@ -17,13 +17,13 @@ For core screens, a pixel perfect implementation is expected (as far as possible
 
 ## Screens
 ### Supporting Screens x2
-![](./Wireframes/startScreenReadme.png)
-![](./Wireframes/endScreenReadme.png)
+![](little-data-case-files/Wireframes/startScreenReadme.png)
+![](little-data-case-files/Wireframes/endScreenReadme.png)
 
 ### Core Screens x3
-![](./Wireframes/welcomeScreen1Readme.png)
-![](./Wireframes/welcomeScreen2Readme.png)
-![](./Wireframes/welcomeScreen3Readme.png)
+![](little-data-case-files/Wireframes/welcomeScreen1Readme.png)
+![](little-data-case-files/Wireframes/welcomeScreen2Readme.png)
+![](little-data-case-files/Wireframes/welcomeScreen3Readme.png)
 
 
 
