@@ -21,32 +21,6 @@
 <script>
 export default {
   name: 'Destination',
-  data() {
-    return {
-      form: {
-        source: '',
-        checked: '',
-      },
-      errors: {
-        source: '',
-        checked: ''
-      },
-    }
-  },
-  methods: {
-    goBack () {
-      this.$emit('back')
-    },
-    continueStep() {
-      if (!this.form.source) {
-        this.errors.source = 'Please select one'
-      }
-      if (!this.form.checked) {
-        this.errors.checked = 'Please select one'
-      }
-      this.$emit('continue')
-    }
-  }
 }
 </script>
 
